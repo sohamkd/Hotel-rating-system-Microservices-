@@ -1,5 +1,4 @@
-package com.cws.user.service.entities;
-
+package com.cws.hotel.entites;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,17 +9,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="ratings")
+@Table(name="hotels")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Rating {
+public class Hotel {
 
     @Id
-    private String ratingId;
-    private String userId;
-    private String hotelId;
-    private int rating;
-    private String feedback;
+    private String id;
+    private String name ;
+    private String location;
+    private String about;
 }
